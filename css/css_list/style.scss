@@ -1,0 +1,113 @@
+@import "../css_add/style";
+
+// ==================== Start Header ====================
+
+.addingContent {
+  .header {
+    .container {
+      .right-side {
+        width: 230px;
+        button {
+          margin-bottom: 0.8rem;
+        }
+        #delete-product-btn {
+          width: 100px;
+          &:hover {
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Small  */
+@media (max-width: 768px) {
+  .addingContent {
+    .header {
+      .container {
+        height: 18vh;
+
+        .right-side {
+          display: grid;
+          width: 100px !important;
+          justify-items: end;
+          width: 230px;
+          button {
+            margin-bottom: 0.8rem;
+          }
+          .delete {
+            width: 100px;
+            &:hover {
+              width: 110px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ==================== End Header ====================
+// ==================== Start Product ====================
+.product {
+  margin-top: 5rem;
+
+  .container {
+    border-bottom: $mainBorderBottom;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 0.3fr));
+    padding-bottom: 8rem;
+    .box {
+      border: solid 2px;
+      margin: 10px;
+      padding: 20px;
+      width: 20vw;
+      height: 34vh;
+
+      .info-container {
+        text-align: center;
+        position: relative;
+        top: 10px;
+        div {
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+}
+
+/* Medium  */
+@media (max-width: 992px) {
+  .product {
+    .container {
+      justify-content: center;
+      justify-items: center;
+      .box {
+        border: solid 2px;
+        margin: 10px;
+        padding: 20px;
+        width: 30vw;
+        height: 20vh;
+      }
+    }
+  }
+}
+/* Small  */
+@media (max-width: 768px) {
+  .product {
+    .container {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      .box {
+        width: 70vw;
+        height: 30vh;
+        margin: 2rem 0 4rem;
+      }
+    }
+  }
+}
+/* Big  */
+@media (max-width: 1200px) {
+}
+// ==================== End Product ====================

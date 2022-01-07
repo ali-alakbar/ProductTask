@@ -1,0 +1,281 @@
+/* =================== Start Global Rules =================== */
+
+$globalFont: "Poppins", sans-serif;
+$globalColor: #151515;
+$blackColor: #000;
+$whiteColor: #fff;
+$cursur: pointer;
+$mainBorder: solid 2px;
+$mainBorderBottom: solid 1px;
+$mainTransition: all 0.3s ease-in-out;
+// Start Mixing
+
+@mixin btn {
+  height: 27px;
+  width: 65px;
+  background-color: $whiteColor;
+  border: $mainBorder;
+  box-shadow: 2px 2px 0px 1px $globalColor;
+  cursor: pointer;
+  transition: $mainTransition;
+  &:hover {
+    height: 30px;
+    width: 70px;
+    margin: -2px;
+  }
+}
+
+// End Mixing
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: $globalFont;
+  overflow-x: hidden;
+  color: $globalColor;
+}
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Start Screen Responsive */
+
+/* Small  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Big  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+/* =================== End Global Rules =================== */
+.addingContent {
+  // ============== Start Header ==============
+
+  .header {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      height: 15vh;
+      align-items: center;
+      border-bottom: $mainBorderBottom;
+      padding-top: 25px;
+
+      .left-side {
+        h1 {
+          font-weight: 400;
+        }
+      }
+
+      .right-side {
+        display: flex;
+        width: 170px;
+        justify-content: space-around;
+
+        button {
+          @include btn();
+          a {
+            cursor: pointer;
+            position: relative;
+            width: 100%;
+            text-decoration: none;
+            color: $blackColor;
+            display: block;
+            margin: 0;
+          }
+        }
+        input{
+          @include btn();
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .header {
+      .container {
+        .right-side {
+          display: grid;
+          width: 100px !important;
+          justify-items: end;
+          button {
+            margin-bottom: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  // ============== End Header ==============
+
+  // ============== Start Product Form ==============
+
+  .myProductForm {
+    margin-top: 4rem;
+    .container {
+      border-bottom: $mainBorderBottom;
+      .filling-info {
+        // Start Stylling Global Inputs
+        .input-wrapper {
+          margin-bottom: 1.5rem;
+          label {
+            font-weight: 400;
+          }
+          input {
+            margin-left: 3rem;
+            padding: 5px 10px;
+            border: $mainBorder;
+          }
+        }
+        // End Stylling Global Inputs
+
+        // Start Stylling Type Switcher
+        .mySwitcher {
+          background-color: $whiteColor;
+          width: 100px;
+          height: 40px;
+          border: $mainBorder;
+        }
+        // End Stylling Type Switcher
+        // Start Stylling Singlly
+        #sku {
+          margin-left: 4.1rem;
+        }
+        #price {
+          margin-left: 1.7rem;
+        }
+        #weight {
+          margin-left: 3.8rem;
+        }
+        #height {
+          margin-left: 3.2rem;
+        }
+        #width {
+          margin-left: 3.5rem;
+        }
+        #length {
+          margin-left: 3.03rem;
+        }
+
+        // Start Stylling Attribute Spesific
+        .section {
+          align-items: center;
+          width: 60%;
+          height: 20vh;
+          border: solid 2px;
+          max-width: 100%;
+          margin-bottom: 2rem;
+          padding: 0 30px;
+          display: none;
+
+          .input-wrapper {
+            margin: 0;
+          }
+        }
+
+        .furniture {
+          height: unset;
+          .askDimensions {
+            padding: 20px 0 50px;
+            font-weight: 400;
+          }
+          .input-wrapper {
+            margin-bottom: 1.5rem;
+          }
+        }
+        .remove {
+          display: none;
+        }
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .myProductForm {
+      .container {
+        .filling-info {
+          // Start Stylling Attribute Spesific
+          .section {
+            width: 66%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    .myProductForm {
+      .container {
+        .filling-info {
+          // Start Stylling Attribute Spesific
+          .section {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .myProductForm {
+      .container {
+        .filling-info {
+          // Start Stylling Attribute Spesific
+          .section {
+            width: 100%;
+            .input-wrapper {
+              display: grid;
+              width: 100%;
+              label {
+                margin-bottom: 1rem;
+              }
+              input {
+                margin: 0 !important;
+              }
+            }
+          }
+          .furniture {
+            .askDimensions {
+              padding: 20px 0 40px;
+            }
+            .furniture-attribute {
+              width: 200%;
+            }
+          }
+        }
+      }
+    }
+  }
+  // ============== End Product Form ==============
+}
+// ============== Start Footer ==============
+
+footer {
+  .container {
+    .scandiweb {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100px;
+    }
+  }
+}
+
+// ============== End Footer ==============

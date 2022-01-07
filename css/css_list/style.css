@@ -1,0 +1,372 @@
+/* =================== Start Global Rules =================== */
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: #151515;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Start Screen Responsive */
+/* Small  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Big  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Screen Responsive */
+/* =================== End Global Rules =================== */
+.addingContent .header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 15vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px;
+  padding-top: 25px;
+}
+
+.addingContent .header .container .left-side h1 {
+  font-weight: 400;
+}
+
+.addingContent .header .container .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.addingContent .header .container .right-side button {
+  height: 27px;
+  width: 65px;
+  background-color: #fff;
+  border: solid 2px;
+  -webkit-box-shadow: 2px 2px 0px 1px #151515;
+          box-shadow: 2px 2px 0px 1px #151515;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.addingContent .header .container .right-side button:hover {
+  height: 30px;
+  width: 70px;
+  margin: -2px;
+}
+
+.addingContent .header .container .right-side button a {
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin: 0;
+}
+
+.addingContent .header .container .right-side input {
+  height: 27px;
+  width: 65px;
+  background-color: #fff;
+  border: solid 2px;
+  -webkit-box-shadow: 2px 2px 0px 1px #151515;
+          box-shadow: 2px 2px 0px 1px #151515;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.addingContent .header .container .right-side input:hover {
+  height: 30px;
+  width: 70px;
+  margin: -2px;
+}
+
+@media (max-width: 768px) {
+  .addingContent .header .container .right-side {
+    display: -ms-grid;
+    display: grid;
+    width: 100px !important;
+    justify-items: end;
+  }
+  .addingContent .header .container .right-side button {
+    margin-bottom: 0.8rem;
+  }
+}
+
+.addingContent .myProductForm {
+  margin-top: 4rem;
+}
+
+.addingContent .myProductForm .container {
+  border-bottom: solid 1px;
+}
+
+.addingContent .myProductForm .container .filling-info .input-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.addingContent .myProductForm .container .filling-info .input-wrapper label {
+  font-weight: 400;
+}
+
+.addingContent .myProductForm .container .filling-info .input-wrapper input {
+  margin-left: 3rem;
+  padding: 5px 10px;
+  border: solid 2px;
+}
+
+.addingContent .myProductForm .container .filling-info .mySwitcher {
+  background-color: #fff;
+  width: 100px;
+  height: 40px;
+  border: solid 2px;
+}
+
+.addingContent .myProductForm .container .filling-info #sku {
+  margin-left: 4.1rem;
+}
+
+.addingContent .myProductForm .container .filling-info #price {
+  margin-left: 1.7rem;
+}
+
+.addingContent .myProductForm .container .filling-info #weight {
+  margin-left: 3.8rem;
+}
+
+.addingContent .myProductForm .container .filling-info #height {
+  margin-left: 3.2rem;
+}
+
+.addingContent .myProductForm .container .filling-info #width {
+  margin-left: 3.5rem;
+}
+
+.addingContent .myProductForm .container .filling-info #length {
+  margin-left: 3.03rem;
+}
+
+.addingContent .myProductForm .container .filling-info .section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  height: 20vh;
+  border: solid 2px;
+  max-width: 100%;
+  margin-bottom: 2rem;
+  padding: 0 30px;
+  display: none;
+}
+
+.addingContent .myProductForm .container .filling-info .section .input-wrapper {
+  margin: 0;
+}
+
+.addingContent .myProductForm .container .filling-info .furniture {
+  height: unset;
+}
+
+.addingContent .myProductForm .container .filling-info .furniture .askDimensions {
+  padding: 20px 0 50px;
+  font-weight: 400;
+}
+
+.addingContent .myProductForm .container .filling-info .furniture .input-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.addingContent .myProductForm .container .filling-info .remove {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .addingContent .myProductForm .container .filling-info .section {
+    width: 66%;
+  }
+}
+
+@media (max-width: 992px) {
+  .addingContent .myProductForm .container .filling-info .section {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .addingContent .myProductForm .container .filling-info .section {
+    width: 100%;
+  }
+  .addingContent .myProductForm .container .filling-info .section .input-wrapper {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+  }
+  .addingContent .myProductForm .container .filling-info .section .input-wrapper label {
+    margin-bottom: 1rem;
+  }
+  .addingContent .myProductForm .container .filling-info .section .input-wrapper input {
+    margin: 0 !important;
+  }
+  .addingContent .myProductForm .container .filling-info .furniture .askDimensions {
+    padding: 20px 0 40px;
+  }
+  .addingContent .myProductForm .container .filling-info .furniture .furniture-attribute {
+    width: 200%;
+  }
+}
+
+footer .container .scandiweb {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.addingContent .header .container .right-side {
+  width: 230px;
+}
+
+.addingContent .header .container .right-side button {
+  margin-bottom: 0.8rem;
+}
+
+.addingContent .header .container .right-side #delete-product-btn {
+  width: 100px;
+}
+
+.addingContent .header .container .right-side #delete-product-btn:hover {
+  width: 110px;
+}
+
+/* Small  */
+@media (max-width: 768px) {
+  .addingContent .header .container {
+    height: 18vh;
+  }
+  .addingContent .header .container .right-side {
+    display: -ms-grid;
+    display: grid;
+    width: 100px !important;
+    justify-items: end;
+    width: 230px;
+  }
+  .addingContent .header .container .right-side button {
+    margin-bottom: 0.8rem;
+  }
+  .addingContent .header .container .right-side .delete {
+    width: 100px;
+  }
+  .addingContent .header .container .right-side .delete:hover {
+    width: 110px;
+  }
+}
+
+.product {
+  margin-top: 5rem;
+}
+
+.product .container {
+  border-bottom: solid 1px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 0.3fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 0.3fr));
+  padding-bottom: 8rem;
+}
+
+.product .container .box {
+  border: solid 2px;
+  margin: 10px;
+  padding: 20px;
+  width: 20vw;
+  height: 34vh;
+}
+
+.product .container .box .info-container {
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+.product .container .box .info-container div {
+  margin-bottom: 6px;
+}
+
+/* Medium  */
+@media (max-width: 992px) {
+  .product .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+  }
+  .product .container .box {
+    border: solid 2px;
+    margin: 10px;
+    padding: 20px;
+    width: 30vw;
+    height: 20vh;
+  }
+}
+
+/* Small  */
+@media (max-width: 768px) {
+  .product .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .product .container .box {
+    width: 70vw;
+    height: 30vh;
+    margin: 2rem 0 4rem;
+  }
+}
+
+/* Big  */
+/*# sourceMappingURL=style.css.map */
