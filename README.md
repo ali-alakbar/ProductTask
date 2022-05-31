@@ -10,6 +10,12 @@ A product list is two websites to add and remove products to a database. The fir
 - You can detect checkboxes to dynamically remove any box you want from the database.
 - You can dynamically add boxes to the database.
 - Cross-browser Compatibility.
-# Technologies: HTML ● SASS ● JavaScript ● PHP ● SQL ● MySQL.
+# Technologies: 
+- HTML 
+- SASS 
+- JavaScript 
+- PHP 
+- SQL 
+- MySQL
 # Live: 
 - https://myakbar.000webhostapp.com/
