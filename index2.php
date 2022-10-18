@@ -56,7 +56,7 @@ $user -> remove();
         <!-- ============== Start Footer ============== -->
     <footer>
         <div class="container">
-            <div class="scandiweb">Scandiweb Test Assignment</div>
+            <div class="scandiweb">Kuze's Assignment</div>
         </div>
     </footer>
     <!-- ============== End Footer ============== -->
