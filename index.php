@@ -153,7 +153,7 @@ if ($_REQUEST['submit']) {
     <!-- ============== Start Footer ============== -->
     <footer>
         <div class="container">
-            <div class="scandiweb">Scandiweb Test Assignment</div>
+            <div class="scandiweb kazu">Kazu's Assignment</div>
         </div>
     </footer>
     <!-- ============== End Footer ============== -->
